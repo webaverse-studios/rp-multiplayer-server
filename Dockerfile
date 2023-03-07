@@ -1,4 +1,6 @@
 FROM ubuntu:18.04
+RUN apt update
+RUN apt install -y ca-certificates 
 WORKDIR /src
 ADD . .
 EXPOSE 80
